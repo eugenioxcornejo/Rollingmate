@@ -57,6 +57,11 @@ h1{
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,500&display=swap");
 
+.botonesdeimagen{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .imagenCategoriaIndex{
   
@@ -93,7 +98,7 @@ h1{
 }
 
   /* mediaqueries*/
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
    
     .seccionCategoriaIndex:hover .imagenCategoriaIndex{
       -webkit-transform: none;
@@ -106,12 +111,19 @@ h1{
   
 /* promo corte de apgina */
 .promobox{
-    background-color: #193350;
-    color: #fff;
+    
+    color: #193350;
     font-family:'Brygada 1918', serif;
 }
-@media screen  and (max-width: 767px){
+
+@media screen  and (max-width: 1024px){
     .columna{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .registrate{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -126,6 +138,10 @@ h1{
                 align-items: center;
         
             }
+
+    
+     
+            
 }
 @media screen and (min-width: 1420px) {
 .botonescentrados{
@@ -133,7 +149,15 @@ h1{
 }
 
 }
+/* ultimos ingresos */
 
+@media screen and (max-width: 1024px){
+.ultimosingresos{
+    display: flex;
+    flex-direction: column;
+}
+}
+    
  
 
 /* font-family: 'Brygada 1918', serif; */
